@@ -1,18 +1,18 @@
 @font-face {
     font-family: IRYB ;
-    src: url('../LIB/IRYB.ttf') format('truetype');
+    src: url('IRYB.ttf') format('truetype');
 }
 @font-face {
     font-family: IRYM ;
-    src: url('../LIB/IRYM.ttf') format('truetype');
+    src: url('IRYM.ttf') format('truetype');
 }
 @font-face {
     font-family: IRYR ;
-    src: url('../LIB/IRYR.ttf') format('truetype');
+    src: url('IRYR.ttf') format('truetype');
 }
 @font-face {
     font-family: IRYL ;
-    src: url('../LIB/IRYL.ttf') format('truetype');
+    src: url('IRYL.ttf') format('truetype');
 }
 .bold {
     font-family: IRYB ;
