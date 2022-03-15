@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CHAMS IPINFO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+  </head>
+  <body onload="enumeration()">
+		<script>
+			function enumeration() {
+				ipgeolocation();
+				//rdns();
+				//torcheck();
+				useragent();
+			}
+			async function ipgeolocation() {
+				const d = await fetch('https://api.ipgeolocation.io/ipgeo?apiKey=9331c40e7cb24e4b86de49927082b569&fields=country_code2,country_name,city,isp');
+				const j = await d.json() ;
+				document.getElementById("ip").innerHTML = j.ip;
+				document.getElementById("loc").innerHTML = j.city + " , " + j.country_name ;
+				document.getElementById("isp").innerHTML = j.isp;
+				let flagp = "pics/" + j.country_code2 + ".svg" ;
+				document.getElementById("flag").setAttribute( "src" , flagp );
+			}
+			async function useragent() {
+				const d = await fetch('https://api.ipgeolocation.io/user-agent?apiKey=9331c40e7cb24e4b86de49927082b569');
+				const j = await d.json() ;
+				let browsers = [ "Edge" , "Safari" , "Chrome" , "Firefox" , "Opera" ] ;
+				if ( browsers.includes( j.name ) ) {
+					document.getElementById("browser").innerHTML = j.name ;
+					let browserp = "pics/" + j.name + ".svg";
+					document.getElementById("browsericon").setAttribute( "src" , browserp );
+				}
+				let oslist = [ "Android" , "iOS" , "Windows NT" , "Mac OS X" ] ;
+				let os = j.operatingSystem[ "name" ] ;
+				if ( oslist.includes( os ) ) {
+					if ( os == "iOS" ) {
+						os = "IOS" ;
+					}
+					if ( os == "Windows NT" ) {
+						os = "Windows" ;
+					}
+					if ( os == "Mac OS X" ) {
+						os = "OSX" ;
+					}
+					document.getElementById("os").innerHTML = os + " " + j.operatingSystem[ "versionMajor" ] ;
+					let osp = "pics/" + os + ".svg" ;
+					document.getElementById("osicon").setAttribute( "src" , osp );
+				}
+			}
+		</script>
+		<h1 id="ip"></h1>
+		<img id="flag">
+		<h1 id="loc"></h1>
+		<h1 id="isp"></h1>
+		<h1 id="browser"></h1>
+		<img id="browsericon">
+		<h1 id="os"></h1>
+		<img id="osicon">
+  </body>
+</html>
