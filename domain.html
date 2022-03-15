@@ -9,7 +9,8 @@
 			}
 			async function populardomains() {
 				let nc = 'https://api.sandbox.namecheap.com/xml.response?ApiUser=chameleonteam&ApiKey=b7d0d3c259af4a4da54a1f814bc22a0b&UserName=chameleonteam&ClientIp=178.157.82.66&Command=namecheap.domains.check&DomainList=sdhcshdsdkshd.dev,adksdlkdslsd.dev' ;
-				const d = await fetch( nc , { method : 'cors' });
+				const d = await fetch( nc , { method : 'no-cors' });
+                // cors
 				const t = await d.text() ;
 				const x = new window.DOMParser().parseFromString( t , "text/xml") ;
 				document.getElementById( "x" ).innerHTML = x ;
