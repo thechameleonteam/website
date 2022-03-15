@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>CHAMS IPINFO</title>
+	<link rel="icon" href="pics/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -14,6 +15,7 @@
 				ipgeolocation();
 				//rdns();
 				//torcheck();
+				//chameleon();
 				useragent();
 			}
 			async function ipgeolocation() {
@@ -52,13 +54,24 @@
 				}
 			}
 		</script>
-		<h1 id="ip"></h1>
-		<img id="flag">
-		<h1 id="loc"></h1>
-		<h1 id="isp"></h1>
-		<h1 id="browser"></h1>
-		<img id="browsericon">
-		<h1 id="os"></h1>
-		<img id="osicon">
+		<h3>IP :</h3>
+		<img id="flag" width="50" height="25" >
+		<h3 id="ip"></h3>
+		<h3>Host Name :</h3>
+		<img src="pics/DNS.png" width="50" height="50">
+		<h3 id="domain"></h3>
+		<h3>Location :</h3>
+		<img src="pics/Location.png" width="50" height="50">
+		<h3 id="loc"></h3>
+		<h3>ISP :</h3>
+		<img src="pics/ISP.png" width="50" height="50">
+		<h3 id="isp"></h3>
+		<!-- networks are TOR , CHAMELEON , INTERNAL ( tor logo is present ) , webrtc -->
+		<h3>Browser :</h3>
+		<img id="browsericon" width="50" height="50">
+		<h3 id="browser"></h3>
+		<h3>OS :</h3>
+		<img id="osicon" width="50" height="50">
+		<h3 id="os"></h3>
   </body>
 </html>
