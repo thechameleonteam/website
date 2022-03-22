@@ -1,0 +1,128 @@
+https://search.google.com/test/mobile-friendly
+https://pagespeed.web.dev/
+https://ads.google.com/home/tools/keyword-planner/
+https://search.google.com/test/rich-results
+https://web.dev/measure/
+
+
+make a wikipedia page
+ask a magazine like vpn mentor to review
+mention the name in qoura
+register a trust pilot 
+
+<a href="https://destinationdomain.com/index.html">
+
+<img src="logo.svg" alt="Windows OS Logo"/>
+-------------------------------------------------------------------------------------
+credibility searches for IBM :
+ibm -site:ibm.com
+"ibm.com" -site:ibm.com
+ibm reviews -site:ibm.com
+“ibm.com” reviews -site:ibm.com
+ibm site:en.wikipedia.org
+"ibm.com" site:en.wikipedia.org
+--------------------------------------------------------------------------------------
+check indexing : site:[ website name ]
+
+each html page should have it's own unique title and meta tags.
+<head>
+  <title>Brandon's Baseball Cards - Buy Cards, Baseball News, Card Prices</title>
+--> a short bold 1 liner in search results ( use keyword here )
+--> you can use | sign in the title
+  <meta name="description" content="Brandon's Baseball Cards provides a large selection of vintage and modern baseball cards for sale." /> 
+--> a natural human language few lines paragraph description dispalyed below title in search results ( use keywords here ) 
+</head>
+
+consider "people also ask"  for keyword selection
+
+wirte : "Last updated: Feb 14, 2018" in texts to be shown in search results
+
+------------------------------------------------------------------------
+Breadcrumb :
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Design",
+        "item": "https://chameleons.team/desin"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Website",
+        "item": "https://chameleons.team/design/website"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Wordpress",
+        "item": "https://chameleons.team/design/website/wordpress"
+      }]
+    }
+</script>
+
+Logo :
+
+<script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://chameleons.team",
+          "logo": "https://chameleons.team/images/logo.png"
+    }
+</script>
+
+Software app :
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Chameleon VPN",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "GameApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "8864"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.0",
+        "priceCurrency": "USD"
+      }
+    }
+</script>
+
+--------------------------------------------------------------
+
+ALL PAGES :
+<head>
+  <link rel="alternate" hreflang="en" href="https://chameleons.team/en/index.html" />
+  <link rel="alternate" hreflang="fa" href="https://chameleons.team/fa/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://chameleons.team/index.html" />
+  <!-- <link rel="alternate" hreflang="es" href="https://chameleons.team/es/index.html" /> -->
+  <!-- <link rel="alternate" hreflang="fr" href="https://chameleons.team/fr/index.html" /> -->
+  <!-- <link rel="alternate" hreflang="de" href="https://chameleons.team/de/index.html" /> -->
+  <!-- <link rel="alternate" hreflang="ru" href="https://chameleons.team/ru/index.html" /> -->
+  <!-- <link rel="alternate" hreflang="ar" href="https://chameleons.team/ar/index.html" /> -->
+  <!-- <link rel="alternate" hreflang="tr" href="https://chameleons.team/tr/index.html" /> -->
+</head>
+------------------------------
+/en/index.html heading += <link rel="canonical" href="https://chameleons.team/index.html" />
+------------------------------
+
+additionally let users select the language manually with globe icon
+
+English : <a href="/en/index.html">
+Spanish : <a href="/es/index.html">
+French  : <a href="/fr/index.html">
+German  : <a href="/de/index.html">
+Russian : <a href="/ru/index.html">
+Arabic  : <a href="/ar/index.html">
+Persian : <a href="/fa/index.html">
+Turkish : <a href="/tr/index.html">
+
+------------------------------------------------------------------

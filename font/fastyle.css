@@ -1,0 +1,28 @@
+@font-face {
+    font-family: bold ;
+    src: url('iranyekanbold.ttf') format('truetype');
+}
+@font-face {
+    font-family: medium ;
+    src: url('iranyekanmedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: regular ;
+    src: url('iranyekanregular.ttf') format('truetype');
+}
+@font-face {
+    font-family: light ;
+    src: url('iranyekanlight.ttf') format('truetype');
+}
+.bold {
+    font-family: bold ;
+}
+.medium {
+    font-family: medium ;
+}
+.regular {
+    font-family: regular ;
+}
+.light {
+    font-family: light ;
+}

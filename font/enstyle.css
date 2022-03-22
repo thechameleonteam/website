@@ -1,0 +1,55 @@
+@font-face {
+    font-family: BLACKOPS ;
+    font-style: normal ;
+    font-weight: 400 ;
+    src: url(BLACKOPS.woff2) format('woff2') ;
+}
+
+#brand {
+    font-family: BLACKOPS ;
+}
+
+@font-face {
+    font-family: light ;
+    font-style: normal ;
+    font-weight: 300 ;
+    src: url(ubuntulight.woff2) format('woff2');
+}
+
+.light {
+    font-family: light ;
+}
+
+@font-face {
+    font-family: regular ;
+    font-style: normal;
+    font-weight: 400;
+    src: url(ubunturegular.woff2) format('woff2');
+}
+
+.regular {
+    font-family: regular ;
+}
+
+@font-face {
+    font-family: medium ;
+    font-style: normal;
+    font-weight: 500;
+    src: url(ubuntumedium.woff2) format('woff2');
+}
+
+.medium {
+    font-family: medium ;
+}
+
+@font-face {
+    font-family: bold ;
+    font-style: normal;
+    font-weight: 700;
+    src: url(ubuntubold.woff2) format('woff2');
+}
+
+.bold {
+    font-family: bold ;
+}
+
