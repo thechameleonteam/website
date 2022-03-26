@@ -140,7 +140,7 @@ class Myfooter extends HTMLElement {
                     <div class="col-6 col-md">
                         <h5>Features</h5>
                         <ul class="list-unstyled text-small">
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="speedTest.html">Speed Yest</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="speedTest.html">Speed Test</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="ip_info.html">IP Info</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="domain.html">Domain</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="VpsHosting.html">VPS</a></li>
