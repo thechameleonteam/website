@@ -1,0 +1,61 @@
+//breadcrumb
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Design",
+        "item": "https://chameleons.team/desin"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Website",
+        "item": "https://chameleons.team/design/website"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Wordpress",
+        "item": "https://chameleons.team/design/website/wordpress"
+      }]
+    }
+</script>
+
+/*********************************************************************/
+
+//logo
+
+<script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://chameleons.team",
+          "logo": "https://chameleons.team/images/logo.png"
+    }
+</script>
+
+/*********************************************************************/
+
+//software app
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Chameleon VPN",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "GameApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "8864"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.0",
+        "priceCurrency": "USD"
+      }
+    }
+</script>

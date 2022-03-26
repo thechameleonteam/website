@@ -1,0 +1,83 @@
+/****************
+Gradient
+*****************/
+body {
+    background: linear-gradient(-45deg, #0f0c29, #0f3443, #24243e);
+    background-size: 1500% 1500%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/****************
+Custom Class
+*****************/
+.card-radius {
+    border-radius: 25px;
+}
+.card-header-radius {
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+}
+
+/****************
+Dropdown-menu on Hover
+*****************/
+@media screen and (min-width: 992px){
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+    .dropdown .dropdown-menu {
+        display: none;
+    }
+    .dropdown:hover .dropdown-toggle::after {
+        border-top: 0;
+        border-bottom: .3em solid;
+    }   
+}
+@media screen and (max-width: 991px){
+    .dropdown-toggle.show::after{
+        border-top: 0;
+        border-bottom: .3em solid;
+    } 
+}
+
+/****************
+Text Colors
+*****************/
+h1, h2, h3, h4, h5, h6, h7 {
+    color: white;
+}
+
+a {
+    color: gainsboro;
+}
+
+label {
+    color: white;
+}
+
+.swatch-indigo {
+    color: #fff;
+    background-color: #6610f2;
+}
+
+.bg-green-cus, .border-green-cus {
+    background-color: #39AEA9
+}
+
+.bg-blue-cus {
+    background-color: #0706102e;
+}

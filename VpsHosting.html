@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Sign in</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="module" src="assets/js/main.js"></script>
+    <style>
+        .swatch-indigo {
+            color: #fff;
+            background-color: #6610f2;
+        }
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+        .form-signin .checkbox {
+            font-weight: 400;
+            }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: 7px;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <my-navbar></my-navbar>
+
+  <!-- Search Box -->
+  <div class="container pt-5 text-center">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 mb-3">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+      </div>
+      <div class="col-lg-4"></div>
+      </div>
+  </div>
+   
+  <!-- VPS operating System -->
+  <div class="container pt-5 text-center">
+    <h3>Select your VPS operating System:</h3>
+
+    <div class="row row-cols-auto g-3" style="justify-content: center; margin-left: 15%; margin-right: 15%;">
+      
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-2" id="centos" value="centos" autocomplete="off">
+        <label class="btn btn-outline-info" for="centos" style="width: 150px; height: 115px;">
+          <img src="img/icons8-centos-50.png" alt="" width="50 px">
+          <h5>CentOS</h5>
+          <h6 style="font-size: 11pt;">Release 8.1-1911</h6>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-2" id="fedora" value="fedora" autocomplete="off">
+        <label class="btn btn-outline-info" for="fedora" style="width: 150px; height: 115px;">
+          <img src="img/icons8-fedora-50.png" alt="" width="50 px">
+          <h5>Fedora Cloud</h5>
+          <h6>Release 35</h6>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-2" id="debian" value="debian" autocomplete="off">
+        <label class="btn btn-outline-info" for="debian" value="debian" style="width: 150px; height: 115px;">
+          <img src="img/icons8-debian-50.png" alt="" width="50 px">
+          <h5>Debian 11</h5>
+          <h6>Bullseye</h6>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-2" id="ubuntu" value="ubuntu" autocomplete="off">
+        <label class="btn btn-outline-info" for="ubuntu" style="width: 150px; height: 115px;">
+          <img src="img/icons8-ubuntu-50.png" alt="" width="50 px">
+          <h6>Ubuntu 20 LTS</h6>
+          <h7>Focal Fossa</h7>
+        </label>
+      </div>
+      
+      <p>
+        <button class="btn btn-outline-info" style="width: 150px; height: 115px;" type="button" data-bs-toggle="collapse" data-bs-target="#OS" aria-expanded="false" aria-controls="OS">
+          <span style="font-size: 19pt;">Others</span>
+        </button>
+      </p>
+      <div class="collapse" id="OS">
+        <div class="row row-cols-auto g-3" style="justify-content: center;">
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-2" id="alphine" value="alphine" autocomplete="off">
+            <label class="btn btn-outline-info" for="alphine" style="width: 150px; height: 115px;">
+              <img src="img/alpinelinux-logo.svg" alt="" width="50 px">
+              <h5>Alphine</h5>
+              <h6>Release 3.15</h6>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-2" id="docker" value="docker" autocomplete="off">
+            <label class="btn btn-outline-info" for="docker" style="width: 150px; height: 115px;">
+              <img src="img/Docker.svg" alt="" width="50 px">
+              <h5>Docker</h5>
+              <h6>Container</h6>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-2" id="arch" value="arch" autocomplete="off">
+            <label class="btn btn-outline-info" for="arch" style="width: 150px; height: 115px;">
+              <img src="img/icons8-arch-linux-48.png" alt="" width="50 px">
+              <h5>Arch Linux</h5>
+              <h6>2022.3</h6>
+            </label>
+          </div>
+          
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-2" id="kali" value="kali" autocomplete="off">
+            <label class="btn btn-outline-info" for="kali" style="width: 150px; height: 115px;">
+              <img src="img/kali.svg" alt="" width="50 px">
+              <h5>Kali 2022.1</h5>
+              <h6>Cloud</h6>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-2" id="windows10" value="windows10" autocomplete="off">
+            <label class="btn btn-outline-info" for="windows10" style="width: 150px; height: 115px;">
+              <img src="img/icons8-windows-10.svg" alt="" width="50 px">
+              <h5>Microsoft</h5>
+              <h6>Windows 10</h6>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <br>
+    <div>
+      <h5>Not a fan of linux terminal?</h5>
+      <p style="color: white;">All linux distros come with optional graphical user interface ( GUI ) with xfce4 desktop environment</p>
+    </div>
+    
+  </div>
+
+  <div class="container pt-5 text-center">
+    <h4>Your favorite OS not listed?</h4>
+    <p style="color: white;">Upload your iso here</p>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 mb-3">
+      <label for="formFile" class="form-label">Default file input example</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <div class="col-lg-4"></div>
+    </div>
+  </div>
+
+  <!-- VPS datacenter location -->
+  <div class="container pt-5 text-center">
+    <h4>Select your VPS datacenter location:</h4>
+
+    <div class="row row-cols-auto g-3" style="justify-content: center; margin-left: 15%; margin-right: 15%;">
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-3" id="china" value="china" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="china" style="width: 100px; height: 105px;">
+            <img src="svg/CN.svg" alt="" width="50 px">
+            <h5 class="pt-2">China</h5>
+            <p style="font-size: 10pt;">Hong Kong</p>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-3" id="Italy" value="Italy" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="Italy" style="width: 100px; height: 105px;">
+          <img src="svg/IT.svg" alt="" width="50 px">
+          <h5 class="pt-2">Italy</h5>
+          <p style="font-size: 10pt;">Milan</p>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-3" id="UAE" value="UAE" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="UAE" style="width: 100px; height: 105px;">
+          <div>
+            <img src="svg/AE.svg" alt="" width="50 px">
+          </div>
+          <div>
+            <h5 class="pt-3">UAE</h5>
+            <p style="font-size: 10pt;">Dubai</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="col">
+        <input type="radio" class="btn-check" name="options-outlined-3" id="france" value="france" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="france" style="width: 100px; height: 105px;">
+          <img src="svg/FR.svg" alt="" width="50 px">
+          <h5 class="pt-2">France</h5>
+          <p style="font-size: 10pt;">Paris</p>
+        </label>
+      </div>
+
+      <p>
+        <button class="btn btn-outline-secondary" style="width: 100px; height: 105px;" type="button" data-bs-toggle="collapse" data-bs-target="#datacenter-location" aria-expanded="false" aria-controls="datacenter-location">
+          <span style="font-size: 19pt;">Others</span>
+        </button>
+      </p>
+      <div class="collapse" id="datacenter-location">
+        <div class="row row-cols-auto g-3" style="justify-content: center; margin-left: 15%; margin-right: 15%;">
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="us-sanfrancisco" value="us-sanfrancisco" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="us-sanfrancisco" style="width: 100px; height: 105px;">
+              <img src="svg/US.svg" class="pb-1" alt="" width="50 px">
+              <h5 class="pt-2">US</h5>
+              <p style="font-size: 9pt;">San Francisco</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="us-newyork" value="us-newyork" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="us-newyork" style="width: 100px; height: 105px;">
+              <img src="svg/US.svg" alt="" width="50 px">
+              <h5 class="pt-2">US</h5>
+              <p style="font-size: 10pt;">New York</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="canada" value="canada" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="canada" style="width: 100px; height: 105px;">
+              <img src="svg/CA.svg" alt="" width="50 px">
+              <h5 class="pt-2">Canada</h5>
+              <p style="font-size: 10pt;">Toronto</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="spain" value="spain" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="spain" style="width: 100px; height: 105px;">
+              <img src="svg/ES.svg" alt="" width="50 px">
+              <h5 class="pt-2">Spain</h5>
+              <p style="font-size: 10pt;">Madrid</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="uk" value="uk" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="uk" style="width: 100px; height: 105px;">
+              <img src="svg/GB.svg" alt="" width="50 px">
+              <h5 class="pt-2">UK</h5>
+              <p style="font-size: 10pt;">London</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="netherland" value="netherland" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="netherland" style="width: 100px; height: 105px;">
+              <img src="svg/NL.svg" alt="" width="50 px">
+              <h6 class="pt-2">Netherland</h6>
+              <p style="font-size: 10pt;">Amsterdam</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="germany" value="germany" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="germany" style="width: 100px; height: 105px;">
+              <img src="svg/DE.svg" alt="" width="50 px">
+              <h5 class="pt-2">Germany</h5>
+              <p style="font-size: 10pt;">Frankfurt</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="india" value="india" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="india" style="width: 100px; height: 105px;">
+              <img src="svg/IN.svg" alt="" width="50 px">
+              <h5 class="pt-2">India</h5>
+              <p style="font-size: 10pt;">Mumbai</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="singapore" value="singapore" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="singapore" style="width: 100px; height: 105px;">
+              <img src="svg/SG.svg" alt="" width="50 px">
+              <h6 class="pt-2">Singapore</h6>
+              <p style="font-size: 10pt;">Singapore</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="korea" value="korea" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="korea" style="width: 100px; height: 105px;">
+              <img src="svg/KR.svg" class="pb-1" alt="" width="50 px">
+              <h6 class="pt-2" style="font-size: 9pt;">South Korea</h6>
+              <p style="font-size: 10pt;">Seoul</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="japan" value="japan" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="japan" style="width: 100px; height: 105px;">
+              <img src="svg/JP.svg" alt="" width="50 px">
+              <h5 class="pt-2">Japan</h5>
+              <p style="font-size: 10pt;">Tokyo</p>
+            </label>
+          </div>
+  
+          <div class="col">
+            <input type="radio" class="btn-check" name="options-outlined-3" id="australia" value="australia" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="australia" style="width: 100px; height: 105px;">
+              <img src="svg/au.svg" alt="" width="50 px">
+              <h5 class="pt-3">Australia</h5>
+              <p style="font-size: 10pt;">Sydney</p>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <h5>Your desire country not listed?</h5>
+    <p style="color: white;">visit <span><a href="Chameleons.team/en/vpn.html">Chameleons.team/en/vpn</a></span></p>
+  </div>
+
+  <div class="container pt-5 text-center">
+    <h4>Specify your VPS resources:</h4>
+
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <label for="customRange3" class="form-label">RAM:</label>
+        <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+  
+        <label for="customRange3" class="form-label">CPU:</label>
+        <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+  
+        <label for="customRange3" class="form-label">SSD:</label>
+        <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+
+  </div>
+
+  <div class="container pt-5 text-center">
+    <button type="button" class="btn btn-success"  onclick="getspecs()" value="Create">Create</button>
+  </div>
+
+  <script src="assets/js/vpsHosting.js"></script>
+  <h2 id="test"></h2>
+  
+
+  <!-- Footer -->
+  <my-footer></my-footer>
+
+</body>
+
+</html>
